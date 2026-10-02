@@ -1,0 +1,334 @@
+﻿<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="2026年10月7日至11月6日，普吉岛入境、吉隆坡返华的泰国与马来西亚31日旅行攻略">
+  <title>海风与雨林｜泰国 + 马来西亚 31日旅行攻略</title>
+  <style>
+    :root {
+      --ink: #202821;
+      --muted: #667066;
+      --paper: #f5f2e9;
+      --white: #fffef9;
+      --line: #d7d8cc;
+      --green: #315c4c;
+      --blue: #246c84;
+      --red: #b6412f;
+      --gold: #c99132;
+      --shadow: 0 16px 45px rgba(34,40,31,.12);
+    }
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      color: var(--ink);
+      background:
+        linear-gradient(rgba(40, 88, 74, .035) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(40, 88, 74, .035) 1px, transparent 1px),
+        var(--paper);
+      background-size: 32px 32px;
+      font: 16px/1.75 "Noto Serif SC", "Songti SC", "Microsoft YaHei", serif;
+    }
+    a { color: var(--green); }
+    button { font: inherit; }
+    .wrap { width: min(1120px, calc(100% - 40px)); margin: 0 auto; }
+    .hero {
+      min-height: 84vh;
+      position: relative;
+      display: flex;
+      align-items: end;
+      color: white;
+      background:
+        linear-gradient(180deg,rgba(12,24,22,.08) 20%,rgba(12,24,22,.8) 100%),
+        url("https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=2000&q=85") center 48% / cover;
+    }
+    .hero::after { content:""; position:absolute; inset:auto 0 0; height:5px; background:linear-gradient(90deg,var(--red) 0 28%,var(--gold) 28% 55%,var(--blue) 55% 78%,var(--green) 78%); }
+    .hero-inner { position:relative; z-index:1; padding:80px 0 64px; }
+    .kicker, .eyebrow { font:700 14px/1.4 "Microsoft YaHei",sans-serif; }
+    .kicker { margin:0 0 8px; }
+    h1 { max-width:900px; margin:0; font-size:clamp(48px,8vw,104px); line-height:1.04; letter-spacing:0; }
+    .lead { max-width:760px; margin:20px 0 28px; font-size:clamp(17px,2vw,22px); }
+    .hero-facts { display:flex; flex-wrap:wrap; gap:10px; font-family:"Microsoft YaHei",sans-serif; }
+    .hero-facts span { padding:7px 12px; border:1px solid rgba(255,255,255,.5); background:rgba(18,34,29,.35); backdrop-filter:blur(8px); }
+    .nav { position:sticky; top:0; z-index:10; background:rgba(245,242,233,.94); border-bottom:1px solid var(--line); backdrop-filter:blur(14px); }
+    .nav-inner { min-height: 58px; display: flex; align-items: center; justify-content: space-between; gap: 18px; }
+    .brand { flex: 0 0 auto; color: var(--ink); font-weight: 900; text-decoration: none; }
+    .links { min-width:0; display:flex; gap:22px; overflow-x:auto; font:700 14px "Microsoft YaHei",sans-serif; scrollbar-width:none; }
+    .links a { position:relative; padding:20px 0; color:var(--ink); text-decoration:none; white-space:nowrap; }
+    .links a::after { content:""; position:absolute; right:0; bottom:13px; left:0; height:2px; background:var(--red); transform:scaleX(0); transform-origin:left; transition:transform .2s ease; }
+    .links a:hover::after,.links a:focus-visible::after,.links a[aria-selected="true"]::after { transform:scaleX(1); }
+    .links a[aria-selected="true"] { color:var(--red); }
+    .print-btn { border:0; background:var(--ink); color:white; width:36px; height:36px; cursor:pointer; flex:0 0 auto; transition:background .2s ease,transform .2s ease; }
+    .print-btn:hover { background:var(--red); transform:translateY(-1px); }
+    main { padding-bottom: 64px; }
+    .tab-panel { width:min(1180px,calc(100% - 24px)); margin:28px auto; border:1px solid var(--line); box-shadow:var(--shadow); }
+    .tab-panel[hidden] { display:none; }
+    section { padding:82px 0; background:var(--white); }
+    .section-head { display:grid; grid-template-columns:180px 1fr; gap:24px; margin-bottom:36px; }
+    .section-no { color:var(--red); font:800 14px "Microsoft YaHei",sans-serif; }
+    h2 { margin:0; font-size:clamp(32px,5vw,58px); line-height:1.16; letter-spacing:0; }
+    .section-intro { max-width:760px; margin:12px 0 0; color:var(--muted); }
+    .summary { margin-top:-1px; background:var(--white); }
+    .stats { display: grid; grid-template-columns: repeat(4, 1fr); border: 1px solid var(--line); }
+    .stat { padding: 24px; border-right: 1px solid var(--line); }
+    .stat:last-child { border: 0; }
+    .stat strong { display: block; font-size: 27px; line-height: 1.25; }
+    .stat small { color: var(--muted); font-family: "Microsoft YaHei", sans-serif; }
+    .route-line { margin:28px 0 0; padding:20px 24px; border-left:4px solid var(--red); background:var(--paper); font-weight:700; }
+    .notice { display:grid; grid-template-columns:52px 1fr; gap:14px; padding:22px; background:#fff4dc; border:1px solid #e8c982; margin-top:28px; }
+    .notice-mark { width:42px; height:42px; display:grid; place-items:center; background:var(--gold); color:white; font:900 20px "Microsoft YaHei",sans-serif; }
+    .notice p { margin: 4px 0 0; }
+    .cards { display: grid; grid-template-columns: repeat(2, 1fr); gap: 16px; }
+    .card { padding: 22px; border: 1px solid var(--line); background: var(--white); }
+    .card h3 { margin: 0 0 10px; font-size: 20px; }
+    .card p:last-child, .card ul:last-child { margin-bottom: 0; }
+    .card ul { padding-left: 20px; }
+    .pill { display: inline-block; margin: 2px 5px 2px 0; padding: 3px 8px; color: var(--green); border: 1px solid #c7d7ce; background: #edf4ef; font: 700 12px "Microsoft YaHei", sans-serif; }
+    .practical { color:white; background:var(--green); }
+    .practical .section-no,.practical .section-intro { color:#c9ddd5; }
+    .practical .card { border-color:rgba(255,255,255,.3); background:rgba(255,255,255,.06); }
+    .practical .card h3 { color:white; }
+    .practical a { color:#ffe08a; font-weight:700; text-decoration:underline; text-underline-offset:3px; }
+    .practical a:hover,.practical a:focus-visible { color:white; }
+    .itinerary { background:#eee8da; }
+    .segments { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:18px; }
+    .segment { display:grid; grid-template-columns:104px minmax(0,1fr); border:1px solid var(--line); background:var(--white); box-shadow:0 8px 24px rgba(34,40,31,.07); }
+    .segment-index { display:flex; flex-direction:column; align-items:center; gap:12px; padding:22px 10px; color:white; background:var(--segment-color); text-align:center; font-family:"Microsoft YaHei",sans-serif; }
+    .segment-index span { font-size:32px; font-weight:900; line-height:1; }
+    .segment-index small { font-size:12px; line-height:1.6; }
+    .segment-content { min-width:0; padding:20px 22px; }
+    .segment-country { margin:0 0 5px; color:var(--muted); font:700 10px "Microsoft YaHei",sans-serif; letter-spacing:.1em; }
+    .segment-content h3 { margin:0 0 8px; font-size:21px; line-height:1.4; }
+    .segment-content > p:not(.segment-country):not(.segment-link) { margin:0; color:var(--muted); font-size:14px; }
+    .segment-tags { display:flex; flex-wrap:wrap; gap:6px; margin:13px 0; }
+    .segment-tags span { padding:3px 7px; color:var(--segment-color); border:1px solid color-mix(in srgb,var(--segment-color) 35%,white); background:color-mix(in srgb,var(--segment-color) 8%,white); font:700 11px "Microsoft YaHei",sans-serif; }
+    .segment-link { margin:0; padding-top:11px; border-top:1px solid var(--line); color:var(--muted); font-size:13px; }
+    .segment-link strong { color:var(--green); }
+    .route-cards { display: grid; grid-template-columns: repeat(3, 1fr); gap: 14px; }
+    .route-card { padding:20px; border-top:3px solid var(--blue); background:var(--white); }
+    .route-card h3 { margin: 0 0 8px; font-size: 19px; }
+    .route-card p { margin: 0; color: var(--muted); font-size: 14px; }
+    .sources { background:#e9e5d9; }
+    .budget-table { width: 100%; border-collapse: collapse; background: var(--white); }
+    .budget-table th, .budget-table td { padding:12px 16px; border-bottom:1px solid var(--line); text-align:left; }
+    .budget-table th { color:white; background:var(--ink); font:800 12px "Microsoft YaHei",sans-serif; }
+    .budget-table td:last-child { text-align:right; white-space:nowrap; }
+    .source-list { display: grid; gap: 10px; }
+    .source-list a { display:block; padding:16px 18px; background:var(--white); border:1px solid var(--line); text-decoration:none; overflow-wrap:anywhere; }
+    .source-list a:hover { border-color:var(--red); }
+    footer { padding:32px 0 44px; color:#d4ddd7; background:var(--ink); font:13px/1.7 "Microsoft YaHei",sans-serif; }
+    @media (max-width:780px) {
+      .wrap { width:min(100% - 28px,1120px); }
+      .hero { min-height:78vh; }
+      .hero-inner { padding-bottom:48px; }
+      .nav .brand { display:none; }
+      .nav-inner { justify-content:center; }
+      .links { gap:16px; scroll-snap-type:x proximity; }
+      .links a { scroll-snap-align:center; }
+      .section-head { grid-template-columns:1fr; gap:12px; }
+      section { padding:60px 0; }
+      .notice { grid-template-columns:1fr; padding:18px; }
+      .notice-mark { width:36px; height:36px; }
+      .stats { grid-template-columns:repeat(2,minmax(0,1fr)); }
+      .stat { min-width:0; padding:22px 18px; }
+      .stat strong { overflow-wrap:anywhere; }
+      .stat:nth-child(2) { border-right: 0; }
+      .stat:nth-child(-n+2) { border-bottom: 1px solid var(--line); }
+      .cards,.route-cards { grid-template-columns:1fr; }
+      .segments { grid-template-columns:1fr; }
+      .segment { grid-template-columns:76px minmax(0,1fr); }
+      .segment-index { padding:18px 6px; }
+      .segment-index span { font-size:26px; }
+      .segment-content { padding:17px 15px; }
+      .segment-content h3 { font-size:18px; }
+      .budget-table th, .budget-table td { padding: 9px 7px; font-size: 13px; }
+    }
+    @media (prefers-reduced-motion:reduce) {
+      html { scroll-behavior:auto; }
+      .links a::after { transition:none; }
+    }
+    @media print {
+      body { background: white; font-size: 11pt; }
+      .hero { min-height: 220px; print-color-adjust: exact; }
+      .nav, .print-btn { display: none !important; }
+      .tab-panel,.tab-panel[hidden] { display:block; width:100%; margin:0; border:0; box-shadow:none; }
+      section { padding: 28px 0; break-inside: avoid; }
+      .practical,footer { color:var(--ink); background:white; }
+      .practical .section-no,.practical .section-intro { color:var(--muted); }
+      .practical .card { border:1px solid var(--line); background:white; }
+      .practical .card h3 { color:var(--ink); }
+      .practical a { color:var(--green); }
+      .wrap { width: 100%; }
+      .segment { break-inside: avoid; box-shadow:none; }
+      a { color: inherit; }
+    }
+  </style>
+</head>
+<body>
+  <header class="hero">
+    <div class="wrap hero-inner">
+      <p class="kicker">普吉 · 甲米 · 丽贝岛 · 槟城 · 怡保 · 吉隆坡</p>
+      <h1>海风与雨林</h1>
+      <p class="lead">从普吉岛沿安达曼海岸前往甲米与丽贝岛，再经槟城、怡保一路南下至吉隆坡。给雨季留余地，也给海岛和老城之间的转场留出缓冲。</p>
+      <div class="hero-facts"><span>2026.10.07 — 11.06</span><span>31天 · 30晚</span><span>泰国 + 马来西亚</span><span>普吉岛入境 · 吉隆坡返华</span></div>
+    </div>
+  </header>
+
+  <nav class="nav" aria-label="页面导航">
+    <div class="wrap nav-inner">
+      <a class="brand" href="#top">海风与雨林</a>
+      <div class="links" role="tablist" aria-label="攻略栏目"><a id="tab-overview" href="#overview" role="tab" aria-controls="overview" aria-selected="true">总览</a><a id="tab-before" href="#before" role="tab" aria-controls="before" aria-selected="false" tabindex="-1">行前准备</a><a id="tab-itinerary" href="#itinerary" role="tab" aria-controls="itinerary" aria-selected="false" tabindex="-1">每段旅程</a><a id="tab-transit" href="#transit" role="tab" aria-controls="transit" aria-selected="false" tabindex="-1">交通住宿</a><a id="tab-budget" href="#budget" role="tab" aria-controls="budget" aria-selected="false" tabindex="-1">预算</a><a id="tab-sources" href="#sources" role="tab" aria-controls="sources" aria-selected="false" tabindex="-1">实时核验</a></div>
+      <button class="print-btn" type="button" onclick="window.print()" aria-label="打印攻略" title="打印攻略">⎙</button>
+    </div>
+  </nav>
+
+  <main id="top">
+    <section class="summary tab-panel" id="overview" role="tabpanel" aria-labelledby="tab-overview">
+      <div class="wrap">
+        <div class="section-head"><div class="section-no">01 / 路线总览</div><div><h2>沿安达曼海岸，循马来半岛西岸南下</h2><p class="section-intro">根据路线图调整为普吉、甲米、丽贝岛、槟城、怡保、吉隆坡依次前进；不再绕去泰国中部或北部。沿途以海岸、古城、山景和美食为主，并为十月海况与丽贝岛出岛转场预留备选。</p></div></div>
+        <div class="stats">
+          <div class="stat"><strong>31天 / 30晚</strong><small>10月7日出发，11月6日返华</small></div>
+          <div class="stat"><strong>6个落脚段</strong><small>普吉 · 甲米 · 丽贝岛 · 槟城 · 怡保 · 吉隆坡</small></div>
+          <div class="stat"><strong>5次转场</strong><small>长途移动日不安排硬核景点</small></div>
+          <div class="stat"><strong>留白策略</strong><small>出海、天气、航班均设有缓冲</small></div>
+        </div>
+        <p class="route-line">普吉岛 → 甲米 / 奥南 → 丽贝岛 → 槟城 / 乔治市 → 怡保 → 吉隆坡 ✈ 中国</p>
+        <div class="notice"><div class="notice-mark">!</div><div><strong>日期按“11月6日从吉隆坡起飞回中国”编排，返程尚未视为已订票</strong><p>如果你的返程实际是11月7日，建议把多出的一晚加在吉隆坡，不要压缩返程缓冲。所有航班、船班、接驳车和入境规定以承运方与官方系统当日信息为准。本路线默认持中国普通护照、以休闲观光为目的；请按本人护照与实际停留天数复核签证条件。</p></div></div>
+      </div>
+    </section>
+
+    <section class="practical tab-panel" id="before" role="tabpanel" aria-labelledby="tab-before" hidden>
+      <div class="wrap">
+        <div class="section-head"><div class="section-no">02 / 出发前准备</div><div><h2>临近出发，先把关键项办稳</h2><p class="section-intro">出发日为2026年10月7日，距离现在很近。优先确认护照、两国入境申报、首晚住宿、返程机票和旅行保险；申报窗口按各官方门户最新规定操作，谨防代办收费与仿冒链接。</p></div></div>
+        <h3>两国移民局官方 App</h3>
+        <p class="section-intro">TDAC 和 MDAC 都可以通过上方对应官方 App 办理；下方填表步骤中的官方网页是同一申报的网页入口，二选一即可，提交后保存确认信息。</p>
+        <div class="cards">
+          <article class="card"><h3>泰国｜THIM - Thai Immigration Bureau</h3><ul><li>THIM 是泰国移民局官方 App，应用商店发布者为 Royal Thai Police；官方商店简介列有 Digital Arrival Card 功能。</li><li>可用官方 App 办理入境资料，也可继续通过<a href="https://tdac.immigration.go.th/arrival-card/" target="_blank" rel="noreferrer">TDAC 官方网页</a>申报。务必确认提交成功并保存确认页/二维码；仅安装 App 不代表已完成申报。</li><li>下载：<a href="https://apps.apple.com/th/app/thim-thai-immigration-bureau/id6759272559" target="_blank" rel="noreferrer">App Store（iPhone）</a> · <a href="https://play.google.com/store/apps/details?id=th.go.immigration.thim" target="_blank" rel="noreferrer">Google Play（Android）</a> · <a href="https://thim.immigration.go.th/privacy-notice" target="_blank" rel="noreferrer">泰国移民局 App 隐私声明</a></li></ul></article>
+          <article class="card"><h3>马来西亚｜MyNIISe</h3><ul><li>MyNIISe 是马来西亚移民局的官方移民服务 App；移民局已公告可直接通过 App 填写 MDAC。</li><li>通过 App 或<a href="https://imigresen-online.imi.gov.my/mdac/main" target="_blank" rel="noreferrer">MDAC 官方网页</a>提交，完成后保存确认信息；仍须按抵达时间提前办理。</li><li>下载：<a href="https://apps.apple.com/my/app/myniise/id6744350770" target="_blank" rel="noreferrer">App Store（iPhone）</a> · <a href="https://play.google.com/store/apps/details?id=my.gov.onegovappstore.niise" target="_blank" rel="noreferrer">Google Play（Android）</a> · <a href="https://www.imi.gov.my/" target="_blank" rel="noreferrer">马来西亚移民局官网</a></li></ul></article>
+        </div>
+        <div class="cards">
+          <article class="card"><h3>入境泰国｜普吉落地</h3><ul><li><strong>先准备：</strong>护照、普吉航班信息、普吉首晚住宿的英文地址/电话、邮箱；所有信息按护照和实际安排填写，表格用英文。</li><li><strong>护照与个人信息：</strong>填护照资料页上的姓名、护照号、国籍、出生日期等；姓名按护照英文拼写，不要用中文名或自行改换顺序。可扫描护照机读区后逐项核对识别结果。</li><li><strong>旅行信息：</strong>入境日期填实际抵达泰国日期；方式选 AIR，填写飞抵普吉的航班号及出发地等要求项。航班改签后要更新申报。</li><li><strong>住宿还没订怎么办：</strong>TDAC 会要求填写泰国住宿信息，不要留空或编造地址。无需先订完整月行程；可先订一晚真实、可取消的普吉住宿，按确认单填写首晚地址。若提交后住宿改变，依<a href="https://tdac.immigration.go.th/manual/en/" target="_blank" rel="noreferrer">官方指南</a>在出发前更新申报。</li><li><strong>健康申报与提交：</strong>如实填健康问题及抵达前14天到过的国家/地区；按系统提示补充信息。预览检查后填邮箱提交，下载/截图 TDAC 确认页或二维码，每位旅客各自申报。</li><li><strong>时间与费用：</strong>在抵达前3天内（含抵达日）经<a href="https://tdac.immigration.go.th/arrival-card/" target="_blank" rel="noreferrer">官方 TDAC 门户</a>免费提交；10月7日抵达可在10月4日至7日办理。官方说明需英文填写；TDAC 不是签证。</li><li><strong>签证：</strong>中国普通护照免签停留条件依泰中双边安排及最新官方规定；本行程泰国段约11晚。不要照抄旧网页“60天”信息，出发前核验中国适用条款，最终以入境章为准。</li></ul></article>
+          <article class="card"><h3>泰国 → 马来西亚｜丽贝岛后入境</h3><ul><li><strong>先准备：</strong>护照、实际跨境船票/车票、马来西亚首晚酒店地址和邮编、返华机票、邮箱和可接收验证码/联系的手机号码。</li><li><strong>个人信息：</strong>按护照填姓名、护照号、出生日期、国籍/公民身份、出生国家/地区、性别和护照到期日；姓名与日期逐字核对。日期栏按网页提示的 DD/MM/YYYY（例如 22/10/2026）填写。</li><li><strong>联系方式：</strong>填写常用邮箱并重复确认；手机国家区号选实际号码所属国家（中国号码选 +86），再填号码。</li><li><strong>抵达与交通：</strong>入境日期和离境日期按实际马来西亚停留填；“Flight / Vessel / Transportation No.”填实际航班号、船名/班次或陆路交通编号；Mode 依实际选 AIR、SEA 或 LAND；“Last Port of Embarkation”按登上最后一段前往马来西亚交通工具的出发地如实选择。</li><li><strong>对应本路线：</strong>若10月22日从丽贝岛乘国际船直接入境，按实际系统选 SEA，填船班信息，最后出发地按承运方/官方指引选择 Thailand；若改走 Pak Bara—合艾—陆路口岸，选 LAND，填实际跨境交通信息，不能继续照填船班或虚构编号。口岸选项不确定时先问承运方/移民局。</li><li><strong>马来西亚住宿：</strong>住宿类型选酒店等实际类型；地址、城市、州和邮编照首晚确认单填写。槟城州选 PULAU PINANG；若首晚住吉隆坡则选 W.P. KUALA LUMPUR，并按实际酒店选城市，不能按后续行程填。</li><li><strong>提交与保存：</strong>在抵达马来西亚前3天内（含抵达日）经<a href="https://imigresen-online.imi.gov.my/mdac/main" target="_blank" rel="noreferrer">官方 MDAC 门户</a>免费填报；若实际10月22日入境，示例为10月20日至22日。逐项核对后提交，保存确认邮件/页面。改了入境日、交通方式或住宿就重新检查申报；MDAC 不是签证。</li></ul></article>
+          <article class="card"><h3>通用证件与行前备份</h3><ul><li>将护照资料页、机票、两国住宿、保险保单、紧急联系人和申报确认信息保存到手机离线文件，并留一份云端/同行人备份。</li><li>准备一张可境外支付的银行卡、少量现金；携带处方药时保留原包装及处方/说明。</li><li>确认旅行保险覆盖海上活动、医疗和行程中断；把保险救援电话离线保存。</li><li>核对姓名拼写、旅行日期、跨境交通乘客资料完全一致；遇到申报页面收费或要求购买服务，停止操作并回到官方域名。</li></ul></article>
+          <article class="card"><h3>10月海况与雨天</h3><ul><li>普吉、皮皮、甲米与丽贝岛一带仍可能遇到强降雨、风浪和海上警报；海岛船游为可取消选项，不作为必达项目。</li><li>只选正规运营、提供救生衣且允许因天气取消的船家；官方警示、海况或船长判断不适合时就不出海。</li><li>把船游与普吉/甲米休整日互换；取消则改老城、咖啡馆、按摩、博物馆或酒店休息。</li><li>路线走马来西亚西岸；十月不安排东海岸海岛，以免受季风和季节性停航影响。</li></ul></article>
+          <article class="card"><h3>交通和住宿怎么订</h3><ul><li>先确认国际往返航班，再订前3晚和吉隆坡返程前1晚；其他住宿优先选可取消方案。</li><li>甲米到丽贝岛通常需先到沙敦府Pak Bara码头再乘船；核实10月18日当日船班、接驳集合点和海况，别把船期视为保证。</li><li>丽贝岛到槟城要先确认可用的国际船班及日期；若无合适班次，走Pak Bara—合艾—泰马陆路口岸—槟城，并考虑拆成两天。</li><li>跨境交通按运营商当日时刻选车/船；预留港口接驳及边境通关时间，避免紧密衔接。</li></ul></article>
+          <article class="card"><h3>打包与健康</h3><ul><li>轻薄快干衣物、薄长袖、防晒帽、太阳镜、驱蚊用品、折叠伞/轻雨衣、防水手机袋。</li><li>室内空调和夜间车厢偏冷，带一件薄外套；鞋选防滑好走的凉鞋/运动鞋。</li><li>个人处方药带足并保留原包装；准备常用肠胃药、止痛药、创可贴，购买覆盖医疗、意外与行程中断的保险。</li><li>雨季涉水、瀑布和船上注意防滑；不喂野生动物、不骑乘大象，选择透明说明动物福利的机构。</li></ul></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="itinerary tab-panel" id="itinerary" role="tabpanel" aria-labelledby="tab-itinerary" hidden>
+      <div class="wrap">
+        <div class="section-head"><div class="section-no">03 / 每段旅程</div><div><h2>六处落脚，沿海岸一路南下</h2><p class="section-intro">不按日期排每日打卡，把一个目的地当作一段旅程：先住下来，再按天气和状态挑选体验。以下日期用于规划住宿衔接，活动顺序可以自由调整。</p></div></div>
+        <div class="segments">
+          <article class="segment" style="--segment-color:#b6412f">
+            <div class="segment-index"><span>01</span><small>10.07 — 10.13<br>6晚</small></div>
+            <div class="segment-content"><p class="segment-country">THAILAND · PHUKET</p><h3>普吉｜海岛落地，慢慢进入节奏</h3><p>选择普吉镇作为吃逛和雨天活动的据点，或住卡塔/卡伦方便海边休闲；不必频繁换酒店。</p><div class="segment-tags"><span>老城街巷</span><span>南部海岸</span><span>皮皮岛可选</span><span>雨天有替代</span></div><p class="segment-link"><strong>下一段：</strong>乘已确认的陆路接驳或当天运营船班前往甲米，预留半天至一天转场。</p></div>
+          </article>
+          <article class="segment" style="--segment-color:#246c84">
+            <div class="segment-index"><span>02</span><small>10.13 — 10.18<br>5晚</small></div>
+            <div class="segment-content"><p class="segment-country">THAILAND · KRABI</p><h3>甲米｜奥南作据点，海岸与近郊二选一</h3><p>住奥南，按海况安排Railay长尾船、海边散步或正规短程船游；陆上可选择翡翠池/温泉等近郊体验，不把多个远点硬塞一天。</p><div class="segment-tags"><span>奥南</span><span>Railay</span><span>陆上郊游</span><span>机动休整</span></div><p class="segment-link"><strong>下一段：</strong>先确认奥南/甲米至沙敦府Pak Bara码头的接驳和丽贝岛船班，再确定离店日。</p></div>
+          </article>
+          <article class="segment" style="--segment-color:#c99132">
+            <div class="segment-index"><span>03</span><small>10.18 — 10.22<br>4晚</small></div>
+            <div class="segment-content"><p class="segment-country">THAILAND · KOH LIPE</p><h3>丽贝岛｜步行海滩与可选浮潜</h3><p>岛上以步行为主，住宿选步行街或主要海滩附近。可在海况允许时参加一次正规短程浮潜，其余时间留给日出海滩、日落海滩和休息。</p><div class="segment-tags"><span>日出海滩</span><span>日落海滩</span><span>步行街</span><span>船游视海况</span></div><p class="segment-link"><strong>下一段：</strong>先确认当日国际船班是否运营、马来西亚入境手续和槟城接驳；无合适船班则经Pak Bara—合艾—泰马口岸陆路转场，必要时住一晚。</p></div>
+          </article>
+          <article class="segment" style="--segment-color:#315c4c">
+            <div class="segment-index"><span>04</span><small>10.22 — 10.27<br>5晚</small></div>
+            <div class="segment-content"><p class="segment-country">MALAYSIA · PENANG</p><h3>槟城｜住在乔治市，逛老城与吃小吃</h3><p>以乔治市为固定据点，分几次慢逛历史街区、壁画、娘惹文化空间和熟食中心；升旗山与极乐寺视天气、开放和体力安排。</p><div class="segment-tags"><span>乔治市</span><span>历史街区</span><span>娘惹文化</span><span>升旗山可选</span></div><p class="segment-link"><strong>下一段：</strong>搭乘提前确认的火车或巴士前往怡保，核对终点站、行李规定和市内接驳。</p></div>
+          </article>
+          <article class="segment" style="--segment-color:#8b4f72">
+            <div class="segment-index"><span>05</span><small>10.27 — 10.30<br>3晚</small></div>
+            <div class="segment-content"><p class="segment-country">MALAYSIA · IPOH</p><h3>怡保｜旧街场、白咖啡与洞穴寺庙</h3><p>住旧街场/新街场附近，以老街漫步、壁画和本地饮食为主；天气、路况与交通合适时再挑一处洞穴寺庙或近郊体验。</p><div class="segment-tags"><span>旧街场</span><span>白咖啡</span><span>豆芽鸡</span><span>近郊择一</span></div><p class="segment-link"><strong>下一段：</strong>乘已确认的火车或巴士南下吉隆坡，移动日只安排入住与休息。</p></div>
+          </article>
+          <article class="segment" style="--segment-color:#46756a">
+            <div class="segment-index"><span>06</span><small>10.30 — 11.06<br>7晚</small></div>
+            <div class="segment-content"><p class="segment-country">MALAYSIA · KUALA LUMPUR</p><h3>吉隆坡｜城市收尾，为返程留缓冲</h3><p>住轨道交通便利处，分段安排独立广场、中央市场、双子塔、黑风洞与博物馆；每日留休息时间，不再追加马六甲等长途往返。</p><div class="segment-tags"><span>独立广场</span><span>双子塔</span><span>黑风洞</span><span>返程缓冲</span></div><p class="segment-link"><strong>返程：</strong>11月5日住市区或机场周边，按11月6日航班时刻选择；实际晚一天返华则优先加住吉隆坡。</p></div>
+          </article>
+        </div>
+        <div class="notice"><div class="notice-mark">!</div><div><strong>丽贝岛跨境转场是整条路线最需要先锁定的一段</strong><p>10月船班、海况和马来西亚入境/接驳安排可能变化。先确认“甲米—Pak Bara—丽贝岛”和“丽贝岛—槟城”的可行班次，再锁定对应住宿；不要把未确认的直达国际船班当作保证。</p></div></div>
+      </div>
+    </section>
+    <section class="tab-panel" id="transit" role="tabpanel" aria-labelledby="tab-transit" hidden>
+      <div class="wrap">
+        <div class="section-head"><div class="section-no">04 / 交通与住宿</div><div><h2>少折返，给转场留出余量</h2><p class="section-intro">这是路线建议而非实时班次表。按出发日前后重新核对可售航班、巴士/火车和天气停运信息；跨城移动日不建议买不可退的一日游。</p></div></div>
+        <div class="route-cards">
+          <article class="route-card"><h3>普吉 → 甲米奥南</h3><p>按日期比较正规陆路接驳和实际运营的船班；先确认是否门到门、行李限制、集合点和取消政策。转场日按半天至一天预留，不塞景点。</p></article>
+          <article class="route-card"><h3>甲米 → 丽贝岛</h3><p>常见走法是陆路接驳到沙敦府Pak Bara码头，再乘船上岛；核实具体日期船班、集合时间、行李和天气取消政策。</p></article>
+          <article class="route-card"><h3>丽贝岛 → 槟城（重点核实）</h3><p>不要假设有当日直达国际船班或顺畅接驳。先向承运方确认船期；陆路可考虑回Pak Bara—合艾—泰马口岸—槟城，按整天甚至拆两天规划。</p></article>
+          <article class="route-card"><h3>槟城 → 怡保 → 吉隆坡</h3><p>比较正规巴士和铁路方案，核对车站位置、班次和行李规定。怡保建议住旧街场/新街场；吉隆坡住轨道交通方便区域。</p></article>
+          <article class="route-card"><h3>酒店选址</h3><p>普吉：普吉镇或卡塔/卡伦；甲米：奥南；丽贝岛：步行街/主要海滩附近；槟城：乔治市；怡保：旧街场/新街场；吉隆坡：靠近轨道交通和餐饮。</p></article>
+          <article class="route-card"><h3>行李策略</h3><p>尽量一件登机箱加日用背包；跨境航班先确认行李额度。雨季用防水袋分装证件、电子设备和备用衣物。</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="budget tab-panel" id="budget" role="tabpanel" aria-labelledby="tab-budget" hidden>
+      <div class="wrap">
+        <div class="section-head"><div class="section-no">05 / 预算参考</div><div><h2>按舒适但不过度奢华估算</h2><p class="section-intro">下表为单人预算级别粗估，人民币；住宿按双人间平摊，含泰马境内主要交通，不含中国往返国际机票、购物和高价私人包船。节假日、临近出发订票及汇率会显著影响总额。</p></div></div>
+        <table class="budget-table">
+          <thead><tr><th>项目</th><th>31天参考</th><th>说明</th></tr></thead>
+          <tbody>
+            <tr><td>住宿</td><td>¥6,000–10,000</td><td>双人间平摊；独自入住需提高预算</td></tr>
+            <tr><td>餐饮</td><td>¥4,000–6,500</td><td>街头餐食与普通餐厅混合</td></tr>
+            <tr><td>泰马境内交通</td><td>¥2,500–5,500</td><td>含泰南跨境接驳、渡轮/陆路及马来西亚城际交通</td></tr>
+            <tr><td>景点与体验</td><td>¥2,000–4,500</td><td>门票、可选海上活动、缆车/博物馆等</td></tr>
+            <tr><td>保险、网络、杂项</td><td>¥1,000–2,000</td><td>医疗保险、SIM/eSIM、洗衣及应急预留</td></tr>
+            <tr><td><strong>合计（不含国际机票）</strong></td><td><strong>约¥16,000–29,000</strong></td><td>建议另留10%–15%机动金</td></tr>
+          </tbody>
+        </table>
+        <div class="notice"><div class="notice-mark">¥</div><div><strong>预算优先级建议</strong><p>不要省旅行保险、正规海上运营和返程前一晚的住宿；想降预算，优先减少付费船游、改住交通方便的简洁酒店，并通过少换酒店降低接驳成本。</p></div></div>
+      </div>
+    </section>
+
+    <section class="sources tab-panel" id="sources" role="tabpanel" aria-labelledby="tab-sources" hidden>
+      <div class="wrap">
+        <div class="section-head"><div class="section-no">06 / 出发前核验</div><div><h2>以官方页面与承运方通知为准</h2><p class="section-intro">政策、开放时间、天气预警和运输时刻可能在出发前变化。以下链接用于核验，不代表已经替你提交申报或购买任何服务。</p></div></div>
+        <div class="cards">
+          <article class="card"><h3>入境与旅行文件｜官方入口</h3><ul class="source-list"><li><a href="https://tdac.immigration.go.th/arrival-card/" target="_blank" rel="noreferrer">泰国数字入境卡 TDAC（免费）</a></li><li><a href="https://tdac.immigration.go.th/manual/en/" target="_blank" rel="noreferrer">泰国移民局 TDAC 官方填写指南（英文）</a></li><li><a href="https://www.mfa.go.th/en/" target="_blank" rel="noreferrer">泰国外交部｜签证与双边免签公告</a></li><li><a href="https://imigresen-online.imi.gov.my/mdac/main" target="_blank" rel="noreferrer">马来西亚数字入境卡 MDAC（免费）</a></li><li><a href="https://www.imi.gov.my/index.php/en/main-services/visa/visa-requirement-by-country/" target="_blank" rel="noreferrer">马来西亚移民局｜各国签证要求</a></li><li><a href="https://www.imi.gov.my/index.php/en/main-services/entry-requirement-into-malaysia-en/" target="_blank" rel="noreferrer">马来西亚移民局｜入境要求</a></li></ul></article>
+          <article class="card"><h3>航班、船班与安全</h3><ul><li>核实甲米—Pak Bara—丽贝岛的接驳和10月船期。</li><li>核实丽贝岛出岛到槟城的可行性；若走Pak Bara—合艾—泰马口岸陆路，需留足边境交通时间并考虑中途住宿。</li><li>海岛出行查泰国气象部门、海事/港口公告与船家当天是否运行；警报优先于已付款行程。</li><li>本攻略不含实时天气预报；出行前72小时和每天早晨重新判断户外活动。</li></ul></article>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer><div class="wrap">行程建议整理于2026年10月2日。天气、政策、价格和班次以出发当日官方信息为准；有任何安全警示时，取消户外项目并联系当地正规服务机构。</div></footer>
+  <script>
+    const tabs = [...document.querySelectorAll('[role="tab"]')];
+    const panels = [...document.querySelectorAll('[role="tabpanel"]')];
+    const activateTab = (tab, updateHistory = true) => {
+      tabs.forEach(item => {
+        const selected = item === tab;
+        item.setAttribute("aria-selected", String(selected));
+        item.tabIndex = selected ? 0 : -1;
+      });
+      panels.forEach(panel => { panel.hidden = panel.id !== tab.getAttribute("aria-controls"); });
+      if (updateHistory) history.pushState(null, "", tab.hash);
+      const tabList = tab.closest('[role="tablist"]');
+      if (tabList.scrollWidth > tabList.clientWidth) tab.scrollIntoView({ behavior: "smooth", block: "nearest", inline: "center" });
+      window.scrollTo({ top: document.querySelector(".nav").offsetTop, behavior: "smooth" });
+    };
+    const activateFromHash = () => {
+      const tab = tabs.find(item => item.hash === location.hash) || tabs[0];
+      activateTab(tab, false);
+    };
+    tabs.forEach((tab, index) => {
+      tab.addEventListener("click", event => {
+        event.preventDefault();
+        activateTab(tab);
+      });
+      tab.addEventListener("keydown", event => {
+        if (!["ArrowLeft", "ArrowRight", "Home", "End"].includes(event.key)) return;
+        event.preventDefault();
+        const nextIndex = event.key === "Home" ? 0
+          : event.key === "End" ? tabs.length - 1
+          : (index + (event.key === "ArrowRight" ? 1 : -1) + tabs.length) % tabs.length;
+        tabs[nextIndex].focus();
+        activateTab(tabs[nextIndex]);
+      });
+    });
+    window.addEventListener("hashchange", activateFromHash);
+    activateFromHash();
+  </script>
+</body>
+</html>
